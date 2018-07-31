@@ -1,0 +1,686 @@
+body .mainSection .mainWrapper .mainSectionRight .mainSectionRightCard1 .mainSectionRightHeading, body .mainSection .mainWrapper .mainSectionRight .mainSectionRightCard2 .mainSectionRightCard2Heading {
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+body .mainSection .mainWrapper .mainSectionRight .mainSectionRightCard1 .mainSectionRightDescription .mainSectionRightDescriptionLine1 .mainSectionRightDescriptionLineLeft, body .mainSection .mainWrapper .mainSectionRight .mainSectionRightCard2 .mainSectionRightCard2Description {
+  font-family: serif;
+  font-size: 22px;
+  padding-bottom: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (max-height: 645px) {
+  .main .mainHeader, .main .mainFooter {
+    position: fixed;
+    background: white;
+    width: 100%;
+  }
+  .main .section1 {
+    padding-top: 13%;
+  }
+}
+
+body {
+  font-family: sans-serif !important;
+  letter-spacing: 0.5px;
+  font-size: 13px !important;
+  color: #292929;
+}
+
+body .mainHeader .mainWrapper {
+  width: 75%;
+  margin: 0 auto;
+}
+
+body .mainHeader .mainWrapper .firstNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 12px;
+}
+
+body .mainHeader .mainWrapper .firstNav .firstNavLeft {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .mainHeader .mainWrapper .firstNav .firstNavLeft div {
+  margin: auto 0;
+}
+
+body .mainHeader .mainWrapper .firstNav .firstNavLeft .firstNavLeftMainLogo a img {
+  width: 45px;
+}
+
+body .mainHeader .mainWrapper .firstNav .firstNavLeft .verticalLine {
+  border-left: 1px solid #757575;
+  height: 30px;
+}
+
+body .mainHeader .mainWrapper .firstNav .firstNavLeft .firstNavLeftMainHeading {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+body .mainHeader .mainWrapper .firstNav .firstNavLeft .firstNavLeftButton a {
+  padding: 1px 10px;
+  border: 1px solid #03a87c;
+  border-radius: 3px;
+  color: #03a87c;
+}
+
+body .mainHeader .mainWrapper .firstNav .firstNavLeft .firstNavLeftButton a:hover {
+  color: #014432;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  border: 1px solid #027657;
+}
+
+body .mainHeader .mainWrapper .firstNav .firstNavRight {
+  margin: auto 0;
+}
+
+body .mainHeader .mainWrapper .firstNav .firstNavRight a {
+  margin-left: 20px;
+  color: #03a87c;
+}
+
+body .mainHeader .mainWrapper .firstNav .firstNavRight a:first-child:hover {
+  color: #014432;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+body .mainHeader .mainWrapper .firstNav .firstNavRight a:last-child {
+  padding: 10px 15px;
+  border: 1px solid #03a87c;
+  border-radius: 3px;
+  color: #03a87c;
+}
+
+body .mainHeader .mainWrapper .firstNav .firstNavRight a:last-child:hover {
+  color: #014432;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  border: 1px solid #027657;
+}
+
+body .mainHeader .mainWrapper .secondNav {
+  padding: 25px 0;
+  letter-spacing: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .mainHeader .mainWrapper .secondNav a, body .mainHeader .mainWrapper .secondNav .verticalLine {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 15px;
+  color: #757575;
+}
+
+body .mainHeader .mainWrapper .secondNav a:hover, body .mainHeader .mainWrapper .secondNav .verticalLine:hover {
+  color: #424242;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+body .mainHeader .mainWrapper .secondNav a:first-child, body .mainHeader .mainWrapper .secondNav .verticalLine:first-child {
+  margin-left: 0px;
+}
+
+body .mainHeader .mainWrapper .secondNav .verticalLine {
+  border-left: 1px solid #757575;
+  height: 20px;
+}
+
+body .subHeader .subHeaderWrapper {
+  width: 47%;
+  margin: 0 auto;
+  padding-top: 150px;
+  padding-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .subHeader .subHeaderWrapper .subHeaderImage {
+  margin: auto 0;
+  border-radius: 50%;
+  border-top: 2px solid #03a87c;
+  border-bottom: 2px solid #03a87c;
+  padding: 5px;
+  height: 60px;
+}
+
+body .subHeader .subHeaderWrapper .subHeaderImage img {
+  border-radius: 50%;
+}
+
+body .subHeader .subHeaderWrapper .subHeaderContent {
+  margin: auto 0;
+  line-height: 1.6;
+}
+
+body .subHeader .subHeaderWrapper .subHeaderContent .subHeaderContentUp a:first-child {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+body .subHeader .subHeaderWrapper .subHeaderContent .subHeaderContentUp a:last-child {
+  padding: 1px 10px;
+  border: 1px solid #03a87c;
+  border-radius: 3px;
+  color: #03a87c;
+  margin-left: 5px;
+}
+
+body .subHeader .subHeaderWrapper .subHeaderContent .subHeaderContentUp a:last-child:hover {
+  color: #014432;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  border: 1px solid #027657;
+}
+
+body .subHeader .subHeaderWrapper .subHeaderContent .subHeaderContentDown {
+  color: #757575;
+  font-size: 14px;
+}
+
+body .subHeader .subHeaderWrapper .subHeaderContent .subHeaderContentDown .subHeaderContentDownText3 i {
+  font-size: 3px;
+}
+
+body .banner {
+  background-image: url(../images/pic09.jpeg);
+  width: 100%;
+  height: 1026px;
+  background-size: cover;
+}
+
+body .source {
+  text-align: center;
+  padding: 10px 0;
+  color: #757575;
+}
+
+body .source a {
+  border-bottom: 1px solid #757575;
+}
+
+body .source a:hover {
+  color: #424242;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+body .mainSection {
+  padding-top: 85px;
+}
+
+body .mainSection .mainWrapper {
+  width: 75%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .mainSection .mainWrapper .mainSectionLeft {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+body .mainSection .mainWrapper .mainSectionLeft a {
+  font-size: 15px;
+  padding-bottom: 15px;
+  color: #757575;
+}
+
+body .mainSection .mainWrapper .mainSectionLeft a i {
+  font-size: 25px;
+}
+
+body .mainSection .mainWrapper .mainSectionLeft a:nth-child(2) {
+  color: #03a87c;
+}
+
+body .mainSection .mainWrapper .mainSectionLeft a:nth-child(2):hover {
+  color: #027657;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+body .mainSection .mainWrapper .mainSectionLeft a:hover {
+  color: #424242;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+body .mainSection .mainWrapper .mainSectionRight {
+  width: 70%;
+  line-height: 1.2;
+}
+
+body .mainSection .mainWrapper .mainSectionRight .mainSectionRightCard1 .mainSectionRightSaperator {
+  text-align: center;
+  font-size: 3px;
+  color: #757575;
+  padding: 20px 0;
+}
+
+body .mainSection .mainWrapper .mainSectionRight .mainSectionRightCard1 .mainSectionRightSaperator i {
+  padding-left: 15px;
+}
+
+body .mainSection .mainWrapper .mainSectionRight .mainSectionRightCard1 .mainSectionRightDescription .mainSectionRightDescriptionLine1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .mainSection .mainWrapper .mainSectionRight .mainSectionRightCard1 .mainSectionRightDescription .mainSectionRightDescriptionLine1 .mainSectionRightDescriptionLine1Right {
+  -ms-flex-preferred-size: 15%;
+      flex-basis: 15%;
+  text-align: right;
+  color: #757575;
+}
+
+body .mainSection .mainWrapper .mainSectionRight .mainSectionRightCard2 .mainSectionRightCard2Description .linkUnderline {
+  text-decoration: underline;
+}
+
+body .mainSection .mainWrapper .mainSectionRight .mainSectionRightCard2 .mainSectionRightCard2Description .textBold {
+  font-weight: bold;
+}
+
+body .mainSection .mainWrapper .mainSectionRight .mainSectionRightCard2 .mainSectionRightCard2Link {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+body .mainSection .mainWrapper .mainSectionRight .mainSectionRightCard2 .mainSectionRightCard2Button {
+  margin: 10px 0;
+  padding: 15px 10px;
+}
+
+body .mainSection .mainWrapper .mainSectionRight .mainSectionRightCard2 .mainSectionRightCard2Button a {
+  background: #f2f2f2;
+  color: darken-color(#f2f2f2, 5%);
+  padding: 5px 8px;
+  margin-right: 5px;
+}
+
+body .mainSection .mainWrapper .mainSectionRight .mainSectionRightCard2 .mainSectionRightCard2Heading2 {
+  padding-top: 25px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+body .mainSection .mainWrapper .mainSectionRight .mainSectionRightCard3 {
+  padding: 30px 0;
+}
+
+body .mainSection .mainWrapper .mainSectionRight .mainSectionRightCard3 .mainSectionRightCard3Links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .mainSection .mainWrapper .mainSectionRight .mainSectionRightCard3 .mainSectionRightCard3Links a {
+  font-size: 12px;
+  margin: auto 0;
+  color: #757575;
+}
+
+body .mainSection .mainWrapper .mainSectionRight .mainSectionRightCard3 .mainSectionRightCard3Links a i {
+  font-size: 22px;
+}
+
+body .mainSection .mainWrapper .mainSectionRight .mainSectionRightCard3 .mainSectionRightCard3Links a:hover {
+  color: #424242;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+body .mainSection .mainWrapper .mainSectionRight .mainSectionRightCard3 .mainSectionRightCard3Links .mainSectionRightCard3LinksLeft a {
+  padding-right: 15px;
+}
+
+body .mainSection .mainWrapper .mainSectionRight .mainSectionRightCard3 .mainSectionRightCard3Links .mainSectionRightCard3LinksLeft a:first-child {
+  color: #03a87c;
+}
+
+body .mainSection .mainWrapper .mainSectionRight .mainSectionRightCard3 .mainSectionRightCard3Links .mainSectionRightCard3LinksLeft a:first-child:hover {
+  color: #027657;
+}
+
+body .mainSection .mainWrapper .mainSectionRight .mainSectionRightCard3 .mainSectionRightCard3Links .mainSectionRightCard3LinksRight a {
+  padding-left: 15px;
+}
+
+body .mainSection .mainWrapper .mainSectionRight .mainSectionRightCard3 .mainSectionRightCard3SubCards {
+  margin: 55px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .mainSection .mainWrapper .mainSectionRight .mainSectionRightCard3 .mainSectionRightCard3SubCards .mainSectionRightCard3SubCard {
+  -ms-flex-preferred-size: 47%;
+      flex-basis: 47%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .mainSection .mainWrapper .mainSectionRight .mainSectionRightCard3 .mainSectionRightCard3SubCards .mainSectionRightCard3SubCard .mainSectionRightCard3SubCardImage {
+  margin: auto 0;
+  border-radius: 50%;
+  border-top: 2px solid #03a87c;
+  border-bottom: 2px solid #03a87c;
+  padding: 5px;
+  height: 60px;
+  margin: 0;
+}
+
+body .mainSection .mainWrapper .mainSectionRight .mainSectionRightCard3 .mainSectionRightCard3SubCards .mainSectionRightCard3SubCard .mainSectionRightCard3SubCardImage img {
+  border-radius: 50%;
+}
+
+body .mainSection .mainWrapper .mainSectionRight .mainSectionRightCard3 .mainSectionRightCard3SubCards .mainSectionRightCard3SubCard .mainSectionRightCard3SubCardContent {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+body .mainSection .mainWrapper .mainSectionRight .mainSectionRightCard3 .mainSectionRightCard3SubCards .mainSectionRightCard3SubCard .mainSectionRightCard3SubCardContent .mainSectionRightCard3SubCardContentText1 {
+  font-weight: bold;
+  font-size: 18px;
+  padding-bottom: 8px;
+}
+
+body .mainSection .mainWrapper .mainSectionRight .mainSectionRightCard3 .mainSectionRightCard3SubCards .mainSectionRightCard3SubCard .mainSectionRightCard3SubCardContent .mainSectionRightCard3SubCardContentText1:hover {
+  color: #03a87c;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+body .mainSection .mainWrapper .mainSectionRight .mainSectionRightCard3 .mainSectionRightCard3SubCards .mainSectionRightCard3SubCard .mainSectionRightCard3SubCardContent .mainSectionRightCard3SubCardContentText2 {
+  color: #757575;
+  padding-bottom: 8px;
+}
+
+body .mainSection .mainWrapper .mainSectionRight .mainSectionRightCard3 .mainSectionRightCard3SubCards .mainSectionRightCard3SubCard .mainSectionRightCard3SubCardContent .mainSectionRightCard3SubCardContentText3, body .mainSection .mainWrapper .mainSectionRight .mainSectionRightCard3 .mainSectionRightCard3SubCards .mainSectionRightCard3SubCard .mainSectionRightCard3SubCardContent .mainSectionRightCard3SubCardContentText4 {
+  color: #424242;
+}
+
+body .mainSection .mainWrapper .mainSectionRight .mainSectionRightCard3 .mainSectionRightCard3SubCards .mainSectionRightCard3SubCard .mainSectionRightCard3SubCardContent .mainSectionRightCard3SubCardContentText3 {
+  padding-bottom: 3px;
+}
+
+body .mainSection .mainWrapper .mainSectionRight .mainSectionRightCard3 .mainSectionRightCard3SubCards .mainSectionRightCard3SubCard .mainSectionRightCard3SubCardButton {
+  margin-top: 10px;
+}
+
+body .mainSection .mainWrapper .mainSectionRight .mainSectionRightCard3 .mainSectionRightCard3SubCards .mainSectionRightCard3SubCard .mainSectionRightCard3SubCardButton a {
+  padding: 8px 12px;
+  border: 1px solid #03a87c;
+  border-radius: 3px;
+  color: #03a87c;
+}
+
+body .mainSection .mainWrapper .mainSectionRight .mainSectionRightCard3 .mainSectionRightCard3SubCards .mainSectionRightCard3SubCard .mainSectionRightCard3SubCardButton a:hover {
+  color: #014432;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  border: 1px solid #027657;
+}
+
+body .commentSection {
+  background: #fafafa;
+}
+
+body .commentSection .mainWrapper {
+  width: 50%;
+  margin: 0 auto;
+}
+
+body .commentSection .mainWrapper .firstText {
+  font-weight: bold;
+  font-size: 12px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  color: #505050;
+}
+
+body .commentSection .mainWrapper .commentSectionInput {
+  background: white;
+  padding: 25px;
+  border: 0.1px solid #757575;
+  font-size: 23px;
+  color: #757575;
+}
+
+body .commentSection .mainWrapper .commentSectionInput input {
+  border: none;
+  outline: none;
+  width: 85%;
+  padding: 8px;
+}
+
+body .commentSection .mainWrapper .horizontalLine {
+  border-top: 2px solid #757575;
+  width: 100px;
+  margin: 25px 25px;
+}
+
+body .commentSection .mainWrapper .commentSectionConversation {
+  padding: 0px 25px;
+  color: #757575;
+}
+
+body .commentSection .mainWrapper .commentSectionConversation .commentSectionPerson1, body .commentSection .mainWrapper .commentSectionConversation .commentSectionPerson2 {
+  color: #03a87c;
+}
+
+body .commentSection .mainWrapper .commentSectionConversation .commentSectionPerson1:hover, body .commentSection .mainWrapper .commentSectionConversation .commentSectionPerson2:hover {
+  text-decoration: underline;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+body .commentSection .mainWrapper .commentSectionCommentCards {
+  margin: 35px 0;
+}
+
+body .commentSection .mainWrapper .commentSectionCommentCards .commentSectionCommentCard {
+  background: white;
+  border: 0.5px solid #757575;
+  padding: 25px;
+}
+
+body .commentSection .mainWrapper .commentSectionCommentCards .commentSectionCommentCard .commentSectionCommentCardHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .commentSection .mainWrapper .commentSectionCommentCards .commentSectionCommentCard .commentSectionCommentCardHeader .commentSectionCommentCardHeaderImage {
+  margin: auto 0;
+  border-radius: 50%;
+  border-top: 2px solid #03a87c;
+  border-bottom: 2px solid #03a87c;
+  padding: 5px;
+  height: 35px;
+}
+
+body .commentSection .mainWrapper .commentSectionCommentCards .commentSectionCommentCard .commentSectionCommentCardHeader .commentSectionCommentCardHeaderImage img {
+  border-radius: 50%;
+}
+
+body .commentSection .mainWrapper .commentSectionCommentCards .commentSectionCommentCard .commentSectionCommentCardHeader .commentSectionCommentCardHeaderText {
+  -ms-flex-preferred-size: 92%;
+      flex-basis: 92%;
+}
+
+body .commentSection .mainWrapper .commentSectionCommentCards .commentSectionCommentCard .commentSectionCommentCardHeader .commentSectionCommentCardHeaderText .commentSectionCommentCardHeaderText1 {
+  margin-bottom: 8px;
+}
+
+body .commentSection .mainWrapper .commentSectionCommentCards .commentSectionCommentCard .commentSectionCommentCardHeader .commentSectionCommentCardHeaderText .commentSectionCommentCardHeaderText1 a {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+body .commentSection .mainWrapper .commentSectionCommentCards .commentSectionCommentCard .commentSectionCommentCardHeader .commentSectionCommentCardHeaderText .commentSectionCommentCardHeaderText2 {
+  color: #757575;
+}
+
+body .commentSection .mainWrapper .commentSectionCommentCards .commentSectionCommentCard .commentSectionCommentCardHeader .commentSectionCommentCardHeaderText .commentSectionCommentCardHeaderText2 i {
+  font-size: 3px;
+}
+
+body .commentSection .mainWrapper .commentSectionCommentCards .commentSectionCommentCard .commentSectionCommentCardContent p {
+  font-size: 18px;
+  padding-top: 25px;
+}
+
+body .commentSection .mainWrapper .commentSectionCommentCards .commentSectionCommentCard .commentSectionCommentCardContent p:last-child {
+  font-size: 13px;
+  color: #757575;
+}
+
+body .commentSection .mainWrapper .commentSectionCommentCards .commentSectionCommentCard .commentSectionCommentCardFooter {
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .commentSection .mainWrapper .commentSectionCommentCards .commentSectionCommentCard .commentSectionCommentCardFooter .commentSectionCommentCardFooterLeft {
+  font-size: 14px;
+  color: #757575;
+}
+
+body .commentSection .mainWrapper .commentSectionCommentCards .commentSectionCommentCard .commentSectionCommentCardFooter .commentSectionCommentCardFooterLeft a {
+  color: #03a87c;
+  padding-right: 5px;
+}
+
+body .commentSection .mainWrapper .commentSectionCommentCards .commentSectionCommentCard .commentSectionCommentCardFooter .commentSectionCommentCardFooterLeft a i {
+  font-size: 22px;
+}
+
+body .commentSection .mainWrapper .commentSectionCommentCards .commentSectionCommentCard .commentSectionCommentCardFooter .commentSectionCommentCardFooterLeft a:hover {
+  color: #014432;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+body .commentSection .mainWrapper .commentSectionCommentCards .commentSectionCommentCard .commentSectionCommentCardFooter .commentSectionCommentCardFooterRight {
+  color: #757575;
+  font-size: 22px;
+}
+
+body .commentSection .mainWrapper .commentSectionCommentCards .commentSectionCommentCard .commentSectionCommentCardFooter .commentSectionCommentCardFooterRight:hover {
+  color: #424242;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+body .mainFooter {
+  padding: 17px 0;
+  bottom: 0;
+}
+
+body .mainFooter .mainWrapper {
+  width: 50%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .mainFooter .mainWrapper .mainFooterLeft img {
+  border-radius: 3px;
+}
+
+body .mainFooter .mainWrapper .mainFooterMiddle {
+  -ms-flex-preferred-size: 72%;
+      flex-basis: 72%;
+  font-size: 15px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+body .mainFooter .mainWrapper .mainFooterMiddle .textBold {
+  font-weight: bold;
+}
+
+body .mainFooter .mainWrapper .mainFooterMiddle a {
+  color: #03a87c;
+}
+
+body .mainFooter .mainWrapper .mainFooterMiddle a:hover {
+  text-decoration: underline;
+}
+
+body .mainFooter .mainWrapper .mainFooterRight {
+  padding: 15px 12px;
+  background: #1c9963;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+/*# sourceMappingURL=growth.css.map */

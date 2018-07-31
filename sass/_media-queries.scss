@@ -1,0 +1,13 @@
+@media (max-height: 645px) {
+    .main {
+        .mainHeader, .mainFooter {
+            position: fixed;
+            background: white;
+            width: 100%;
+        }
+
+        .section1 {
+            padding-top: 13%;
+        }
+    }
+}

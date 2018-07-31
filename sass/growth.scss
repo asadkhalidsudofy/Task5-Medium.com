@@ -1,0 +1,604 @@
+//define variables
+@import "variables";
+
+//define functions
+@import "functions";
+
+//define mixins
+@import "mixins";
+
+//define extentions
+@import "extentions";
+
+//define globals
+@import "globals";
+
+//media queries
+@import "media-queries";
+
+body {
+    font-family: sans-serif !important;
+    letter-spacing: 0.5px;
+    font-size: 13px !important;
+    color: $black-color;
+
+    .mainHeader {
+        // z-index: 1;
+
+        .mainWrapper {
+            @include mainWrapper;
+
+            .firstNav {
+                @include flex-box;
+
+                justify-content: space-between;
+                padding-top: 12px;
+
+                .firstNavLeft {
+                    div {
+                        margin: auto 0;
+                    }
+
+                    flex-basis: 30%;
+
+                    @include flex-box;
+
+                    justify-content: space-between;
+
+                    .firstNavLeftMainLogo {
+                        a {
+                            img {
+                                width: 45px;
+                            }
+                        }
+                    }
+
+                    .verticalLine {
+                        @include verticalLine;
+
+                        height: 30px;
+                    }
+
+                    .firstNavLeftMainHeading {
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+
+                    .firstNavLeftButton {
+                        a {
+                            @include button-with-border(1px, 10px);
+                        }
+                    }
+                }
+
+                .firstNavRight {
+                    margin: auto 0;
+
+                    a {
+                        margin-left: 20px;
+                        color: $green-color;
+
+                        &:first-child:hover {
+                            @include color-darken-hover(dakren-color($green-color, 20%));
+                        }
+
+                        &:last-child {
+                            @include button-with-border(10px, 15px);
+                        }
+                    }
+                }
+            }
+
+            .secondNav {
+                padding: 25px 0;
+                letter-spacing: 1px;
+
+                @include flex-box;
+
+                a, .verticalLine {
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    margin-left: 15px;
+                    color: $grey-color;
+
+                    &:hover {
+                        @include color-darken-hover(dakren-color($grey-color, 20%));
+                    }
+
+                    &:first-child {
+                        margin-left: 0px;
+                    }
+                }
+
+                .verticalLine {
+                    @include verticalLine;
+
+                    height: 20px;
+                }
+            }
+        }
+    }
+
+    .subHeader {
+        .subHeaderWrapper {
+            width: 47%;
+            margin: 0 auto;
+            padding-top: 150px;
+            padding-bottom: 30px;
+
+            @include flex-box;
+
+            justify-content: space-between;
+
+            .subHeaderImage {
+                @include round-image-with-round-border;
+            }
+
+            .subHeaderContent {
+                margin: auto 0;
+                line-height: 1.6;
+
+                .subHeaderContentUp {
+                    a {
+                        &:first-child {
+                            font-size: 15px;
+                            font-weight: 600;
+                        }
+
+                        &:last-child {
+                            @include button-with-border(1px, 10px);
+
+                            margin-left: 5px;
+                        }
+                    }
+                }
+
+                .subHeaderContentDown {
+                    color: $grey-color;
+                    font-size: 14px;
+
+                    .subHeaderContentDownText3 {
+                        i {
+                            font-size: 3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .banner {
+        background-image: url(../images/pic09.jpeg);
+        width: 100%;
+        height: 1026px;
+        background-size: cover;
+    }
+
+    .source {
+        text-align: center;
+        padding: 10px 0;
+        color: $grey-color;
+
+        a {
+            border-bottom: 1px solid $grey-color;
+
+            &:hover {
+                @include color-darken-hover(dakren-color($grey-color, 20%));
+            }
+        }
+    }
+
+    .mainSection {
+        padding-top: 85px;
+
+        .mainWrapper {
+            @include mainWrapper;
+            @include flex-box;
+
+            .mainSectionLeft {
+                flex-basis: 20%;
+
+                @include flex-box($flex-direction: column);
+
+                text-align: center;
+
+                a {
+                    font-size: 15px;
+                    padding-bottom: 15px;
+                    color: $grey-color;
+
+                    i {
+                        font-size: 25px;
+                    }
+
+                    &:nth-child(2) {
+                        color: $green-color;
+
+                        &:hover {
+                            color: darken($color: $green-color, $amount: 10%);
+                            transition-duration: 0.5s;
+                        }
+                    }
+
+                    &:hover {
+                        color: darken($color: $grey-color, $amount: 20%);
+                        transition-duration: 0.5s;
+                    }
+                }
+            }
+
+            .mainSectionRight {
+                width: 70%;
+                line-height: 1.2;
+
+                .mainSectionRightCard1 {
+                    .mainSectionRightHeading {
+                        @extend %mainSectionRightHeading;
+                    }
+
+                    .mainSectionRightSaperator {
+                        text-align: center;
+                        font-size: 3px;
+                        color: $grey-color;
+                        padding: 20px 0;
+
+                        i {
+                            padding-left: 15px;
+                        }
+                    }
+
+                    .mainSectionRightDescription {
+                        .mainSectionRightDescriptionLine1 {
+                            @include flex-box;
+
+                            justify-content: space-between;
+
+                            .mainSectionRightDescriptionLineLeft {
+                                @extend %mainSectionRightDescription;
+                            }
+
+                            .mainSectionRightDescriptionLine1Right {
+                                flex-basis: 15%;
+                                text-align: right;
+                                color: $grey-color;
+                            }
+                        }
+                    }
+                }
+
+                .mainSectionRightCard2 {
+                    .mainSectionRightCard2Heading {
+                        @extend %mainSectionRightHeading;
+                    }
+
+                    .mainSectionRightCard2Description {
+                        @extend %mainSectionRightDescription;
+
+                        .linkUnderline {
+                            text-decoration: underline;
+                        }
+
+                        .textBold {
+                            font-weight: bold;
+                        }
+                    }
+
+                    .mainSectionRightCard2Link {
+                        font-size: 18px;
+                        font-weight: bold;
+                        text-decoration: underline;
+                    }
+
+                    .mainSectionRightCard2Button {
+                        margin: 10px 0;
+                        padding: 15px 10px;
+
+                        a {
+                            background: #f2f2f2;
+                            color: darken-color(#f2f2f2, 5%);
+                            padding: 5px 8px;
+                            margin-right: 5px;
+                        }
+                    }
+
+                    .mainSectionRightCard2Heading2 {
+                        padding-top: 25px;
+                        padding-bottom: 10px;
+                        font-size: 18px;
+                        font-weight: bold;
+                    }
+                }
+
+                .mainSectionRightCard3 {
+                    padding: 30px 0;
+
+                    .mainSectionRightCard3Links {
+                        @include flex-box;
+
+                        justify-content: space-between;
+
+                        a {
+                            font-size: 12px;
+                            margin: auto 0;
+                            color: $grey-color;
+
+                            i {
+                                font-size: 22px;
+                            }
+
+                            &:hover {
+                                color: darken($color: $grey-color, $amount: 20%);
+                                transition-duration: 0.5s;
+                            }
+                        }
+
+                        .mainSectionRightCard3LinksLeft {
+                            a {
+                                padding-right: 15px;
+
+                                &:first-child {
+                                    color: $green-color;
+
+                                    &:hover {
+                                        color: darken($color: $green-color, $amount: 10%);
+                                    }
+                                }
+                            }
+                        }
+
+                        .mainSectionRightCard3LinksRight {
+                            a {
+                                padding-left: 15px;
+                            }
+                        }
+                    }
+
+                    .mainSectionRightCard3SubCards {
+                        margin: 55px 0;
+
+                        @include flex-box;
+
+                        justify-content: space-between;
+
+                        .mainSectionRightCard3SubCard {
+                            flex-basis: 47%;
+
+                            @include flex-box;
+
+                            justify-content: space-around;
+
+                            .mainSectionRightCard3SubCardImage {
+                                @include round-image-with-round-border;
+
+                                margin: 0;
+                            }
+
+                            .mainSectionRightCard3SubCardContent {
+                                flex-basis: 50%;
+
+                                .mainSectionRightCard3SubCardContentText1 {
+                                    font-weight: bold;
+                                    font-size: 18px;
+                                    padding-bottom: 8px;
+
+                                    &:hover {
+                                        @include color-darken-hover($green-color);
+                                    }
+                                }
+
+                                .mainSectionRightCard3SubCardContentText2 {
+                                    color: $grey-color;
+                                    padding-bottom: 8px;
+                                }
+
+                                .mainSectionRightCard3SubCardContentText3, .mainSectionRightCard3SubCardContentText4 {
+                                    color: darken($color: $grey-color, $amount: 20%);
+                                }
+
+                                .mainSectionRightCard3SubCardContentText3 {
+                                    padding-bottom: 3px;
+                                }
+                            }
+
+                            .mainSectionRightCard3SubCardButton {
+                                margin-top: 10px;
+
+                                a {
+                                    @include button-with-border(8px, 12px);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .commentSection {
+        background: #fafafa;
+
+        .mainWrapper {
+            @include mainWrapper(50%);
+
+            .firstText {
+                font-weight: bold;
+                font-size: 12px;
+                padding-bottom: 30px;
+                padding-top: 30px;
+                color: #505050;
+            }
+
+            .commentSectionInput {
+                background: white;
+                padding: 25px;
+                border: 0.1px solid $grey-color;
+                font-size: 23px;
+                color: $grey-color;
+
+                input {
+                    border: none;
+                    outline: none;
+                    width: 85%;
+                    padding: 8px;
+                }
+            }
+
+            .horizontalLine {
+                @include horizontalLine(100px, 2px);
+
+                margin: 25px 25px;
+            }
+
+            .commentSectionConversation {
+                padding: 0px 25px;
+                color: $grey-color;
+
+                .commentSectionPerson1, .commentSectionPerson2 {
+                    color: $green-color;
+
+                    &:hover {
+                        text-decoration: underline;
+                        transition-duration: 0.5s;
+                    }
+                }
+            }
+
+            .commentSectionCommentCards {
+                margin: 35px 0;
+
+                .commentSectionCommentCard {
+                    background: white;
+                    border: 0.5px solid $grey-color;
+                    padding: 25px;
+
+                    .commentSectionCommentCardHeader {
+                        @include flex-box;
+
+                        justify-content: space-between;
+
+                        .commentSectionCommentCardHeaderImage {
+                            @include round-image-with-round-border(35px);
+                        }
+
+                        .commentSectionCommentCardHeaderText {
+                            flex-basis: 92%;
+
+                            .commentSectionCommentCardHeaderText1 {
+                                margin-bottom: 8px;
+
+                                a {
+                                    font-weight: bold;
+                                    font-size: 15px;
+                                }
+                            }
+
+                            .commentSectionCommentCardHeaderText2 {
+                                color: $grey-color;
+
+                                i {
+                                    font-size: 3px;
+                                }
+                            }
+                        }
+                    }
+
+                    .commentSectionCommentCardContent {
+                        p {
+                            font-size: 18px;
+                            padding-top: 25px;
+
+                            &:last-child {
+                                font-size: 13px;
+                                color: $grey-color;
+                            }
+                        }
+                    }
+
+                    .commentSectionCommentCardFooter {
+                        padding-top: 30px;
+
+                        @include flex-box;
+
+                        justify-content: space-between;
+
+                        .commentSectionCommentCardFooterLeft {
+                            font-size: 14px;
+                            color: $grey-color;
+
+                            a {
+                                color: $green-color;
+                                padding-right: 5px;
+
+                                i {
+                                    font-size: 22px;
+                                }
+
+                                &:hover {
+                                    color: darken($color: $green-color, $amount: 20%);
+                                    transition-duration: 0.5s;
+                                }
+                            }
+                        }
+
+                        .commentSectionCommentCardFooterRight {
+                            color: $grey-color;
+                            font-size: 22px;
+
+                            &:hover {
+                                color: darken($color: $grey-color, $amount: 20%);
+                                transition-duration: 0.5s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .mainFooter {
+        padding: 17px 0;
+        bottom: 0;
+
+        .mainWrapper {
+            @include mainWrapper(50%);
+            @include flex-box;
+
+            justify-content: space-between;
+
+            .mainFooterLeft {
+                img {
+                    border-radius: 3px;
+                }
+            }
+
+            .mainFooterMiddle {
+                flex-basis: 72%;
+                font-size: 15px;
+                margin-top: auto;
+                margin-bottom: auto;
+
+                .textBold {
+                    font-weight: bold;
+                }
+
+                a {
+                    color: $green-color;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .mainFooterRight {
+                padding: 15px 12px;
+                background: #1c9963;
+                margin-top: auto;
+                margin-bottom: auto;
+                color: white;
+                border-radius: 5px;
+                font-weight: bold;
+            }
+        }
+    }
+}
